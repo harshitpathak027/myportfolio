@@ -3,190 +3,399 @@
 
 <head>
   <meta charset="UTF-8">
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
+  <title>Harshit Pathak</title>
 </head>
 
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>H</span>arshit <span>P</span>athak</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Skills</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+  <header>
+    <div class="logo"><span>H</span>arshit <span>P</span>athak</div>
+    <ul class="navlist">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <i class='bx bx-menu'id = "menu" ></i>
+  </header>
+
+<!--home section-->
+
+<section id = "home" class = "home">
+  <div class="home-content scroll-scale">
+    <h1>Hi! I'm Harshit Pathak</h1>
+    <div class="change-text">
+      <h3>And I'm</h3>
+      <h3>
+        <span class="word">
+          Web Developer
+        </span>
+        <span class="word">
+          programmer
+        </span>
+
+      </h3>
+
     </div>
-  </section>
-  <!-- End Header -->
+
+<p>A passionate and motivated front-end developer who is thrilled to embark on a journey in the world of web development. Despite being a fresher, I've spent considerable time honing my skills and gaining a deep understanding of modern front-end technologies. During my time at College, I completed several projects that allowed me to apply my knowledge of HTML, CSS, and JavaScript to create user-friendly and visually appealing websites. </p>
+
+<div class="info-box">
+  <div class="email-info"> <h5>Email</h5>
+    <span>harshitpathak027@gmail.com</span>
+  </div>
+ 
 
 
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Harshit Pathak <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
+</div>
 
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title"><span>S</span>kills</h1>
+<div class="btn-box">
+  <a href="https://drive.google.com/file/d/1ipAZKO6Zw7NRBtu5S5wE1-ZTm1mEFZ3j/view?usp=sharing" class="btn">Download CV</a>
+
+</div>
+</div>
+<div class="home-image  scroll-scale">
+  <div class="img-box">
+    <img src="man.png" alt="">
+  </div>
+  <div class="liquid-shape">
+    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+      <path fill="#12f7ff">
+        <animate attributeName = "d"
+        dur = "20000ms"
+        repeatCount = "indefinite"
+        values = "
+        M437,310Q457,370,414,414.5Q371,459,310.5,462.5Q250,466,192.5,458Q135,450,93.5,407Q52,364,27.5,307Q3,250,31,195Q59,140,100.5,101.5Q142,63,196,69Q250,75,288.5,96Q327,117,364,140Q401,163,409,206.5Q417,250,437,310Z;
+        M429,288Q382,326,362.5,368Q343,410,296.5,419.5Q250,429,200.5,425Q151,421,100,393.5Q49,366,57,308Q65,250,72,200.5Q79,151,111,107.5Q143,64,196.5,65.5Q250,67,299.5,72.5Q349,78,373,121.5Q397,165,436.5,207.5Q476,250,429,288Z;
+        M424.82882,302.07774Q429.96859,354.15548,377.09914,366.9572Q324.22968,379.75893,287.11484,409.59344Q250,439.42795,205.71398,421.35022Q161.42795,403.27248,115.12053,378.90086Q68.81311,354.52925,61.69258,302.26463Q54.57205,250,75.64978,205.71398Q96.72752,161.42795,124.03494,120.53494Q151.34236,79.64193,200.67118,73.84236Q250,68.0428,305.75677,62.59344Q361.51355,57.14409,410.01924,93.34452Q458.52493,129.54495,439.10699,189.77248Q419.68905,250,424.82882,302.07774Z;
+        M466.00362,309.50071Q456.00247,369.00141,398.0019,387.50181Q340.00132,406.00221,295.00066,416.00053Q250,425.99885,203.99987,417.99969Q157.99974,410.00053,99.99872,390.00093Q41.99771,370.00132,53.49929,310.00066Q65.00088,250,86.50097,209.00031Q108.00106,168.00062,122.99996,112.49934Q137.99885,56.99806,193.99943,32.99643Q250,8.99479,289.99863,59.99974Q329.99726,111.00468,382.49771,127.00287Q434.99815,143.00106,455.50146,196.50053Q476.00476,250,466.00362,309.50071Z;
+        M452,302Q430,354,395.5,398Q361,442,305.5,426Q250,410,203,411Q156,412,98,391.5Q40,371,37.5,310.5Q35,250,62.5,204Q90,158,123,122.5Q156,87,203,51Q250,15,291.5,60.5Q333,106,381.5,126Q430,146,452,198Q474,250,452,302Z;
+        M429,296Q409,342,388.5,398Q368,454,309,462Q250,470,189.5,465Q129,460,90.5,412Q52,364,57,307Q62,250,79,205.5Q96,161,117.5,109.5Q139,58,194.5,42.5Q250,27,310,34.5Q370,42,406,90.5Q442,139,445.5,194.5Q449,250,429,296Z;
+        M431,307Q448,364,392,381Q336,398,293,433.5Q250,469,198.5,449Q147,429,115,387.5Q83,346,72.5,298Q62,250,75.5,203.5Q89,157,127.5,130.5Q166,104,208,61.5Q250,19,309,32.5Q368,46,379.5,107.5Q391,169,402.5,209.5Q414,250,431,307Z;
+        M424.5,301.5Q429,353,379,369.5Q329,386,289.5,412.5Q250,439,193,443Q136,447,91.5,407Q47,367,49,308.5Q51,250,63.5,199.5Q76,149,115,116.5Q154,84,202,52.5Q250,21,304.5,41Q359,61,381.5,111Q404,161,412,205.5Q420,250,424.5,301.5Z;
+        "
         
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Programming Languages</h2>
-          <p>c++ <br>
-          Javascript <br>  HTML/CSS </p><br><br>
-        </div>
-       
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Framework /</h2>
-          <h2>Libraries</h2>
-          <p>React <br> Node js <br> Express js </p><br>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Programming Profile</h2><br>
-          <p><a href="https://leetcode.com/harshit__pathak/" class = "new">Leetcode</a> <br><br>
-          <a href="https://auth.geeksforgeeks.org/user/pathakji/" class = "new">Geekforgeeks</a></p><br>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Developer Tools </h2><br>
-          
-          <p>Vscode <br> Jupyter Notebook <br> Bootstrap </p><br>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
+        ></animate>
+      </path>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Store Net website</h1>
-            <h2> Using HTML, CSS, JavaScript,Reactjs, Strapi, Stripe</h2>
-            
-            <p> A online store where businesses sell their products or services over the internet.
-              It displays a collection of products or services with descriptions, images, and prices, just like items on store shelves.
-              Stripe is used for the payment which is a suite of APIs powering online payment processing and commerce solutions for
-              internet businesses of all sizes. Accept payments and scale faster.
-               Backend is manage by the Strapi which is an open-source content management system (CMS) that helps you build and
-              manage websites and applic</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Ozenpower Website</h1>
-            <h2>Using Django </h2>
-            <p>
-               Develop a website for selling solar light and their battery.
-               By using python make a admin panel for controliing the website add/remove the products.
-               Coded front-end logic for designing interactive interface and enhancing user experience by reducing navigation time.
-               Backend handled by python framework django</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-       
-          
-       
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
+    </svg>
+  </div>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="8-CZ5BeS6lv7Sn0wp.png " alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Hello there I'm Harshit Pathak, a passionate and motivated front-end developer who is thrilled to embark on a journey in the world of web development. Despite being a fresher, I've spent considerable time honing my skills and gaining a deep understanding of modern front-end technologies.
+  <div class="liquid-shape">
+    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+      <path fill="#12f7ff">
+        <animate attributeName = "d"
+        dur = "20000ms"
+        repeatCount = "indefinite"
+        values = "
+        M437,310Q457,370,414,414.5Q371,459,310.5,462.5Q250,466,192.5,458Q135,450,93.5,407Q52,364,27.5,307Q3,250,31,195Q59,140,100.5,101.5Q142,63,196,69Q250,75,288.5,96Q327,117,364,140Q401,163,409,206.5Q417,250,437,310Z;
+        M429,288Q382,326,362.5,368Q343,410,296.5,419.5Q250,429,200.5,425Q151,421,100,393.5Q49,366,57,308Q65,250,72,200.5Q79,151,111,107.5Q143,64,196.5,65.5Q250,67,299.5,72.5Q349,78,373,121.5Q397,165,436.5,207.5Q476,250,429,288Z;
+        M424.82882,302.07774Q429.96859,354.15548,377.09914,366.9572Q324.22968,379.75893,287.11484,409.59344Q250,439.42795,205.71398,421.35022Q161.42795,403.27248,115.12053,378.90086Q68.81311,354.52925,61.69258,302.26463Q54.57205,250,75.64978,205.71398Q96.72752,161.42795,124.03494,120.53494Q151.34236,79.64193,200.67118,73.84236Q250,68.0428,305.75677,62.59344Q361.51355,57.14409,410.01924,93.34452Q458.52493,129.54495,439.10699,189.77248Q419.68905,250,424.82882,302.07774Z;
+        M466.00362,309.50071Q456.00247,369.00141,398.0019,387.50181Q340.00132,406.00221,295.00066,416.00053Q250,425.99885,203.99987,417.99969Q157.99974,410.00053,99.99872,390.00093Q41.99771,370.00132,53.49929,310.00066Q65.00088,250,86.50097,209.00031Q108.00106,168.00062,122.99996,112.49934Q137.99885,56.99806,193.99943,32.99643Q250,8.99479,289.99863,59.99974Q329.99726,111.00468,382.49771,127.00287Q434.99815,143.00106,455.50146,196.50053Q476.00476,250,466.00362,309.50071Z;
+        M452,302Q430,354,395.5,398Q361,442,305.5,426Q250,410,203,411Q156,412,98,391.5Q40,371,37.5,310.5Q35,250,62.5,204Q90,158,123,122.5Q156,87,203,51Q250,15,291.5,60.5Q333,106,381.5,126Q430,146,452,198Q474,250,452,302Z;
+        M424.5,301.5Q429,353,379,369.5Q329,386,289.5,412.5Q250,439,193,443Q136,447,91.5,407Q47,367,49,308.5Q51,250,63.5,199.5Q76,149,115,116.5Q154,84,202,52.5Q250,21,304.5,41Q359,61,381.5,111Q404,161,412,205.5Q420,250,424.5,301.5Z;
+        "
+        
+        ></animate>
+      </path>
 
-          During my time at College, I completed several projects that allowed me to apply my knowledge of HTML, CSS, and JavaScript to create user-friendly and visually appealing websites. Additionally, I actively participated in online coding communities and took various courses to stay up-to-date with the latest industry trends and best practices.
-          
-          I'm particularly enthusiastic about creating seamless user experiences and translating design concepts into functional and responsive websites. My attention to detail and willingness to learn make me an adaptable and valuable team member. I'm also excited about the opportunity to work alongside experienced professionals who can help me grow further in my career.</p>
-        <a href="https://drive.google.com/file/d/1ipAZKO6Zw7NRBtu5S5wE1-ZTm1mEFZ3j/view?usp=sharing" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+    </svg>
+  </div>
+</div>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+91 6395133813</h2>
-            
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>harshitpathak027@gmail.com</h2>
-            
-          </div>
-        </div>
-       
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
 
-  <!-- Footer -->
+
   
-  <!-- End Footer -->
+
+</section>
+
+<!--about section-->
+
+<section id="about" class="about">
+
+  <div class="img-about  scroll-scale">
+    <img src="about-me-pic2.png" alt="">
+
+    <div class="info-about1">
+      <span>300+</span>
+      <p>Leetcode Problem Solved</p>
+      
+    </div>
+    <div class="info-about2">
+      <span>400+</span>
+      <p>
+     Geeksforgeeks problem solved
+      </p>
+      
+    </div>
+    <div class="info-about3">
+      <span>9+</span>
+      <p>leetcode badges</p>
+      
+    </div>
+  </div>
+
+  <div class="about-content  scroll-scale">
+    <span>Let me Introduce yourself</span>
+    <h2>About Me</h2>
+    <h3>A story of good</h3>
+    <p>Hello there I'm Harshit Pathak, a passionate and motivated front-end developer who is thrilled to embark on a journey in the world of web development. Despite being a fresher, I've spent considerable time honing my skills and gaining a deep understanding of modern front-end technologies. During my time at College, I completed several projects that allowed me to apply my knowledge of HTML, CSS, and JavaScript to create user-friendly and visually appealing websites. Additionally, I actively participated in online coding communities and took various courses to stay up-to-date with the latest industry trends and best practices. I'm particularly enthusiastic about creating seamless user experiences and translating design concepts into functional and responsive websites. My attention to detail and willingness to learn make me an adaptable and valuable team member. I'm also excited about the opportunity to work alongside experienced professionals who can help me grow further in my career.</p>
+    <div class="btn-box">
+      <a href="" class="btn">Read More</a>
+    </div>
+  </div>
+
+</section>
+
+<!--skill section ----------------------------------------------------------------------->
+
+<section id="skills" class="skills">
+  <div class="main-text  scroll-scale">
+
+    <h1 class= "skillsheading">My Skills</h1>
+    
+  </div>
+
+  <div class="skill-main ">
+    <div class="skill-left  scroll-scale">
+      <h3>TECHNICAL SKILLS</h3>
+      <div class="skill-bar">
+        <div class="info">
+          <p>Data Structure And Algorithm</p>
+          <p>94%</p>
+          
+        </div>
+        <div class="bar">
+          <span class="DSA"></span>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>html</p>
+          <p>90%</p>
+          
+        </div>
+        <div class="bar">
+          <span  class="html"></span>
+        </div>
+      </div>
+
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>JavaScript</p>
+          <p>82%</p>
+          
+        </div>
+        <div class="bar">
+          <span class="javascript"></span>
+        </div>
+      </div>
+
+
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>c++</p>
+          <p>86%</p>
+          
+        </div>
+        <div class="bar">
+          <span class="c"></span>
+        </div>
+      </div>
+
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>CSS</p>
+          <p>92%</p>
+          
+        </div>
+        <div class="bar">
+          <span class="css"></span>
+        </div>
+      </div>
+
+    </div>
+    <div class="skill-right  scroll-scale">
+      <h3>FRAMEWORK / LIBRARIES</h3>
+      <div class="professional">
+        <div class="box">
+          <div class="circle" data-dots="80" data-percent="82"></div>
+          <div class="text">
+            <big>82%</big>
+            <small>React</small>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <div class="circle" data-dots="80" data-percent="75"></div>
+          <div class="text">
+            <big>75%</big>
+            <small>Nodejs</small>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <div class="circle" data-dots="80" data-percent="70"></div>
+          <div class="text">
+            <big>70%</big>
+            <small>Express js</small>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <div class="circle" data-dots="80" data-percent="80"></div>
+          <div class="text">
+            <big>80%</big>
+            <small>Mongo DB</small>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--PROGRAMMING PROFILE -->
+
+
+
+
+
+
+
+
+
+
+<!--portfolio section-------------------------------------------------------->
+<section id="project" class="project">
+
+
+  <div class="main-text">
+    
+    <h2 class="skillsheading">latest project</h2>
+    
+  </div>
+
+
+  <div class="container">
+    <div class="filter-buttons  scroll-scale">
+      <button class="btn">All</button>
+    
+    </div>
+    
+    <div class="portfolio-gallery  scroll-scale">
+      <div class="port-box">
+        <div class="port-image">
+          <img src="1.jpg" alt="">
+          
+        </div>
+        <div class="port-content">
+          <h3>Store Net website </h3>
+          <p>
+            A online store where businesses sell their products or services over the internet. It displays a collection of products or services with descriptions, images, and prices, just like items on store shelves. </p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+         
+        </div>
+       
+      </div>
+      
+
+
+      <div class="port-box">
+        <div class="port-image">
+          <img src="2.jpg" alt="">
+        </div>
+        <div class="port-content">
+          <h3>Ozenpower Website </h3>
+          <p>Develop a website for selling solar light and their battery. By using python make a admin panel for controliing the website add/remove the products. .</p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+
+
+
+      <div class="port-box">
+        <div class="port-image">
+          <img src="3.jpg" alt="">
+        </div>
+        <div class="port-content">
+          <h3>Weather Website </h3>
+          <p>This website helps to predict the weather of any location.</p>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+
+
+
+     
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!--contact section-------------------------------------------------------------------->
+
+
+<section id="contact" class="contact  ">
+  <div class="main-text">
+    <span>Any Query ?</span>
+    <h2>Contact Us</h2>
+    
+  </div>
+  <form action="#" class=" scroll-bottom">
+    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="Your Email">
+    <input type="text" placeholder="Your Address">
+    <input type="number" placeholder="Your Number">
+    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <div class="btn-box formBtn">
+      <button type="submit" class="btn">Send Message</button>
+
+    </div>
+
+  </form>
+</section>
+
+
+<!---------------------------------------------footer------------------------------------>
+
+<footer>
+  <p>Copyright &copy;2023 by Harshit Pathak || All right reserved.</p>
+  <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+</footer>
+
+
+
+
+
+</body>
+
   <script src="./app.js"></script>
 </body>
 
